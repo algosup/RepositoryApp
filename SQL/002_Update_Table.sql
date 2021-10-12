@@ -13,3 +13,18 @@ insert into Roles(role_name) values('Intermediate Rights');
 insert into Roles(role_name) values('Limited Rights');
 
 
+update Roles
+Set Role_Description = 'Full Rights : Manage Settings, Fill Orders (Buy, Sell), Give Users permissions etc'
+where role_name = 'Full Rights';
+
+update Roles
+Set Role_Description = 'Intermediate Rights : Get Prices, Fill Orders (Buy, Sell), See Orders History'
+where role_name = 'Intermediate Rights';
+
+update Roles
+Set Role_Description = 'Limited Rights : Get Prices'
+where role_name = 'Limited Rights';
+
+
+
+

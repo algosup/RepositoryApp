@@ -37,3 +37,12 @@ CREATE TABLE Roles_Rights (
   FOREIGN KEY (right_id) REFERENCES Rights (right_id)
 );
 
+--- 
+
+Alter table Roles add column role_description VARCHAR (2000);
+
+
+
+
+
+
