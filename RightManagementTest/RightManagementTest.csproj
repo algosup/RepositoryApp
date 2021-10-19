@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ApiClientKata\RightManagementApplication.csproj" />
+    <ProjectReference Include="..\RightManagementApplication\RightManagementApplication.csproj" />
   </ItemGroup>
 
 </Project>

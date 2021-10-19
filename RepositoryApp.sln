@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightManagementApplication", "ApiClientKata\RightManagementApplication.csproj", "{B0A1B331-F61F-4FC3-BCD1-8029EB54F374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightManagementApplication", "RightManagementApplication\RightManagementApplication.csproj", "{B0A1B331-F61F-4FC3-BCD1-8029EB54F374}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightManagementTest", "ApiClientKataTest\RightManagementTest.csproj", "{9A7AD963-6A36-47D6-81EB-B89B2843FA0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightManagementTest", "RightManagementTest\RightManagementTest.csproj", "{9A7AD963-6A36-47D6-81EB-B89B2843FA0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "DatabaseLayer\InfrastructureLayer.csproj", "{0F13F0D9-6AF5-4B0E-ACC8-BE4966CA0A0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{0F13F0D9-6AF5-4B0E-ACC8-BE4966CA0A0D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{1EA7B86C-C18A-41EE-BBC5-5793DA8A45C3}"
 EndProject
