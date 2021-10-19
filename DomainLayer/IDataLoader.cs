@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ApiClientKata
+namespace DomainLayer
 {
     public interface IDataLoader
     {
@@ -11,5 +11,7 @@ namespace ApiClientKata
         void UpdateUser(User user); // Update
 
         void DeleteUser(User user); // Delete
+
+        IEnumerable<RoleDetails> GetRoleDetails();
     }
 }

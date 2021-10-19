@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using DomainLayer;
 using Npgsql;
 
-namespace ApiClientKata
+namespace RepositoryLayer
 {
     public class DataLoader : IDataLoader
     {
@@ -65,6 +66,35 @@ namespace ApiClientKata
         public void DeleteUser(User user)
         {
             throw new NotImplementedException();
+        }
+
+        public IEnumerable<RoleDetails> GetRoleDetails()
+        {
+            var roleDatails = new List<RoleDetails>();
+
+            Connection.Open();
+
+            var query = "Select * from RoleDetailsView;";
+
+            var cmd = new NpgsqlCommand(query, Connection);
+            var dataReader = cmd.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                var role = new Role
+                {
+                    RoleName = dataReader.GetString(0),
+                    RoleDescription = dataReader.GetString(1)
+                };
+
+                var roleDetail = new RoleDetails();
+
+                var rights = new List<Right>();
+
+                roleDatails.Add(roleDetail);
+            }
+
+            return roleDatails;
         }
     }
 }

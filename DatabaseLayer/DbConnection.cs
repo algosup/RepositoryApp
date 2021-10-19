@@ -1,4 +1,4 @@
-﻿namespace ApiClientKata
+﻿namespace RepositoryLayer
 {
     public static class DbConnection
     {

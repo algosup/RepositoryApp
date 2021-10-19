@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using ApiClientKata;
+using DomainLayer;
 using NSubstitute;
 using NUnit.Framework;
+using RepositoryLayer;
 
 namespace ApiClientKataTest
 {

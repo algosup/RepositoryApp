@@ -15,7 +15,7 @@ CREATE TABLE Roles(
 
 CREATE TABLE Rights(
    right_id serial PRIMARY KEY,
-   right_name VARCHAR (255) UNIQUE NOT NULL
+   right_name VARCHAR (255) UNIQUE NOT NULL  
 );
 
 
@@ -40,6 +40,26 @@ CREATE TABLE Roles_Rights (
 --- 
 
 Alter table Roles add column role_description VARCHAR (2000);
+
+-- To Add a description column on Rights table, we drop the table and create it again
+
+alter table roles_rights drop constraint roles_rights_right_id_fkey;
+
+drop table Rights;
+
+CREATE TABLE Rights(
+   right_id serial PRIMARY KEY,
+   right_name VARCHAR (255) UNIQUE NOT NULL,
+   right_description VARCHAR (2000)
+);
+
+ALTER Table Roles_Rights ADD FOREIGN KEY (right_id) REFERENCES Rights (right_id);
+
+
+
+
+
+
 
 
 

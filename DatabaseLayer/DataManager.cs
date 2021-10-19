@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DomainLayer;
 
-namespace ApiClientKata
+namespace RepositoryLayer
 {
     public class DataManager
     {

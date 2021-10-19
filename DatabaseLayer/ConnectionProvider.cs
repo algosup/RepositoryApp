@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Npgsql;
+﻿using Npgsql;
 
-namespace ApiClientKata
+namespace RepositoryLayer
 {
     public class ConnectionProvider
     {
@@ -10,6 +8,5 @@ namespace ApiClientKata
         {
             return new NpgsqlConnection(DbConnection.ConnectionString);
         }
-        
     }
 }
