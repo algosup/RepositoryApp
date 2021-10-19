@@ -1,6 +1,6 @@
 ﻿using Npgsql;
 
-namespace RepositoryLayer
+namespace InfrastructureLayer
 {
     public class ConnectionProvider
     {

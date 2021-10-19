@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>RepositoryLayer</AssemblyName>
-    <RootNamespace>RepositoryLayer</RootNamespace>
+    <AssemblyName>InfrastructureLayer</AssemblyName>
+    <RootNamespace>InfrastructureLayer</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

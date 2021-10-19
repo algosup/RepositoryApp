@@ -4,7 +4,7 @@ using System.Data;
 using DomainLayer;
 using Npgsql;
 
-namespace RepositoryLayer
+namespace InfrastructureLayer
 {
     public class DataLoader : IDataLoader
     {

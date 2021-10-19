@@ -1,14 +1,12 @@
 ﻿using System;
-using RepositoryLayer;
+using InfrastructureLayer;
 
-namespace ApiClientKata
+namespace RightManagementApplication
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var provider = new ConnectionProvider();
-
             var dataManager = new DataManager();
             var userList = dataManager.GetUsers();
 

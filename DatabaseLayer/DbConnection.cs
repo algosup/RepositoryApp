@@ -1,4 +1,4 @@
-﻿namespace RepositoryLayer
+﻿namespace InfrastructureLayer
 {
     public static class DbConnection
     {

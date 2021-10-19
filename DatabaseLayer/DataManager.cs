@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DomainLayer;
 
-namespace RepositoryLayer
+namespace InfrastructureLayer
 {
     public class DataManager
     {

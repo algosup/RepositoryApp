@@ -2,13 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DomainLayer;
+using InfrastructureLayer;
 using NSubstitute;
 using NUnit.Framework;
-using RepositoryLayer;
 
-namespace ApiClientKataTest
+namespace RightManagementTest
 {
-    public class ApiClientKataTest
+    public class RightManagementApplicationTest
     {
         [SetUp]
         public void Setup()
